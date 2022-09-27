@@ -27,11 +27,11 @@ function App() {
             )
           } else {
             //Logout
-            dispatch(logout)
+            dispatch(logout())
           }
         })
         return unsubscribe;
-      },[])
+      },[dispatch])
   return (
     <div className="App">
         <Router>
@@ -40,7 +40,7 @@ function App() {
           ) : (
         
                   <>
-             <Route path="/profile">
+             <Route exact path="/profile">
             <ProfileScreen />
              </Route>
           <Route exact path="/">

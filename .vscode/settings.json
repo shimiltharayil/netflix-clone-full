@@ -1,4 +1,4 @@
 {
-    "git.ignoreLimitWarning": true,
-    "editor.fontFamily": ""
+  "git.ignoreLimitWarning": true,
+  "editor.fontFamily": "Fira Code"
 }
